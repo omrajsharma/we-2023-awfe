@@ -1,0 +1,89 @@
+:root {
+  --grey-background: #cecece;
+}
+
+.form-label-block {
+  display: block;
+}
+
+/* 
+*   NAVBAR
+*/
+nav {
+  padding: 8px;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-left img {
+  width: 40px;
+}
+.nav-right {
+  display: flex;
+  gap: 8px;
+}
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* 
+*   FOOTER
+*/
+footer {
+  height: 100px;
+  background-color: var(--grey-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+*   SIGNUP
+*/
+.signup-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+/*
+*   LOGIN
+*/
+.login-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+/* 
+*   LIST PROPERTIES
+*/
+.list-property-img-input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.list-property-gallary {
+  margin-top: 10px;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+}
+.list-property-gallary-img img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 12px;
+}
