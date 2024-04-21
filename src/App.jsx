@@ -6,11 +6,13 @@ import MainLayout from './layout/MainLayout'
 import Login from './pages/Login'
 import ListProperty from './pages/ListProperty'
 import Profile from './pages/Profile'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <Routes>
       <Route path='/' element={<MainLayout />}>
+        <Route path='/' element={<Home />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
         <Route path='/list-property' element={<ListProperty />} />

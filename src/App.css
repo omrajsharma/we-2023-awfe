@@ -1,5 +1,6 @@
 :root {
   --grey-background: #cecece;
+  --bg-item-card: white;
 }
 
 .form-label-block {
@@ -86,4 +87,90 @@ footer {
   max-width: 200px;
   max-height: 200px;
   border-radius: 12px;
+}
+
+/* 
+  HOME PAGE
+*/
+.home-form {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-card-container {
+  display: inline-block;
+  width: 25%;
+  padding: 10px;
+}
+.item-card {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: rgba(0,0,0,0.05) 0px 0px 0px 1px;
+  background-color: var(--bg-item-card);
+  border: 1px solid #cdcdcd;
+}
+.item-card-imgs {
+  height: 300px;
+  display: flex;
+  overflow: scroll;
+  border-radius: 12px 12px 0 0;
+}
+.item-card-imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
+}
+.item-card-body {
+    padding: 8px;
+}
+.item-card-price {
+  font-size: 22px;
+  font-weight: 500;
+}
+.item-card-title {
+  font-size: 14px;
+}
+.item-card-location {
+  font-size: 12px;
+}
+.item-card-footer {
+  padding: 0 8px 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .item-card-container {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .item-card-container {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .item-card-container {
+    width: 100%;
+  }
+}
+
+.item-card-no-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ababab;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.home-pages {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
 }
