@@ -65,7 +65,7 @@ const Home = () => {
 
         <div className="item-list">
             {itemList.length > 0 && (
-                    itemList.map((item, key) => <ItemCard key={key} {...item}  />)
+                itemList.map((item, key) => <ItemCard key={key} {...item}  />)
             )}
         </div>
 
@@ -80,11 +80,11 @@ const Home = () => {
 }
 
 const ItemCard = ({
-    id, title, imgList, listType, location, price, createdAt
+    _id, title, imgList, listType, location, price, createdAt
 }) => {
     return (
         <div className='item-card-container'>
-            <Link to={`/item/${id}`} >
+            <Link to={`/item/${_id}`} >
                 <div className="item-card">
                     <div className="item-card-imgs">
                         {
