@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
 const PropertyDetail = () => {
+    const {userInfo} = useContext(UserContext);
+    const navigate = useNavigate();
+
+    if (!userInfo) {
+        navigate("/login");
+    }
+
   const { itemId } = useParams();
   const [itemDetails, setItemDetails] = useState();
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BASE_URL}/api/v1/property/${itemId}`)
